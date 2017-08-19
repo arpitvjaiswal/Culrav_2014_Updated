@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -35,6 +37,12 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // select first menu item on startup
+        if (savedInstanceState == null) {
+            navigationView.getMenu().performIdentifierAction(R.id.nav_home, 0);
+            navigationView.setCheckedItem(R.id.nav_home);
+        }
     }
 
     @Override
@@ -56,9 +64,6 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -69,20 +74,29 @@ public class HomeActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * Handle navigation view item clicks here
+     *
+     * @param item - the clicked navigation item
+     * @return true
+     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         switch (id) {
             case R.id.nav_home:
+                openPage(HomeFragment.class);
                 break;
             case R.id.nav_map:
+                openPage(MapFragment.class);
                 break;
             case R.id.nav_team:
+                openPage(TeamFragment.class);
                 break;
             case R.id.nav_dev:
+                openPage(DevFragment.class);
                 break;
             case R.id.nav_web:
                 openWebsite();
@@ -90,6 +104,8 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_fb:
                 openFacebookPage();
                 break;
+            default:
+                openPage(HomeFragment.class);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -97,6 +113,22 @@ public class HomeActivity extends AppCompatActivity
         return true;
     }
 
+    /**
+     * Open the component associated with fragment passed to it
+     *
+     * @param fragmentClass - Fragment to open
+     */
+    private void openPage(Class fragmentClass) {
+        Fragment fragment = null;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.main_content_container, fragment).commit();
+    }
 
     /**
      * Open official website of Culrav
