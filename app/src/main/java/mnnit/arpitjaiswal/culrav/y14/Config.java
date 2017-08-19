@@ -6,6 +6,8 @@ package mnnit.arpitjaiswal.culrav.y14;
 
 final class Config {
 
+    final static String WEBSITE = "http://www.culrav.in";
+
     final static String FB_PAGE_CULRAV = "http://www.facebook.com/mnnit.culrav";
     final static String FB_PAGE_CULARV_ID = "200290116782899";
 }

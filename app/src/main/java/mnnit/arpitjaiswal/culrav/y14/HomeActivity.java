@@ -85,6 +85,7 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_dev:
                 break;
             case R.id.nav_web:
+                openWebsite();
                 break;
             case R.id.nav_fb:
                 openFacebookPage();
@@ -96,9 +97,19 @@ public class HomeActivity extends AppCompatActivity
         return true;
     }
 
+
+    /**
+     * Open official website of Culrav
+     */
+    private void openWebsite() {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(Config.WEBSITE));
+        startActivity(Intent.createChooser(intent, getString(R.string.misc_load_with)));
+    }
+
     /**
      * Open facebook page of Culrav
-     * <p>
+     *
      * First look if the user has facebook app installed
      * If true, open the page inside the app, otherwise provide
      * option to open the link with preferred app/browser
