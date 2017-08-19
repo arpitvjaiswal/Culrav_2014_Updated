@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Culrav</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Action Menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Branding -->
+    <string name="mnnit_allahabad">MNNIT Allahabad</string>
+    <string name="culrav_2014">Culrav 2014</string>
+
+    <!-- Navigation Menu Items -->
+    <string name="nav_menu_home">Home</string>
+    <string name="nav_menu_web">Website</string>
+    <string name="nav_menu_map">Map</string>
+    <string name="nav_menu_team">Team</string>
+    <string name="nav_menu_dev">About</string>
+    <string name="nav_menu_fb">Facebook</string>
+    <string name="nav_section_social">Social</string>
+
+</resources>
