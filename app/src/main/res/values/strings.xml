@@ -20,4 +20,7 @@
     <string name="nav_menu_fb">Facebook</string>
     <string name="nav_section_social">Social</string>
 
+    <!-- Misc. -->
+    <string name="misc_load_with">Load With</string>
+
 </resources>
