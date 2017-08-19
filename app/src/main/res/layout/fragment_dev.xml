@@ -4,10 +4,53 @@
     android:layout_height="match_parent"
     tools:context="mnnit.arpitjaiswal.culrav.y14.DevFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/nav_menu_dev" />
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dev_about_card_view"
+        android:layout_width="384dp"
+        android:layout_height="384dp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:clipChildren="true"
+        android:clipToPadding="false"
+        android:foreground="?android:attr/selectableItemBackground"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developer_name"
+                android:textSize="56sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/developer_email"
+                android:gravity="center_vertical"
+                android:textSize="24sp"
+                android:autoLink="email"
+                android:drawableStart="@drawable/ic_dev_email"
+                android:drawablePadding="8dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/btn_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="180dp"
+        android:contentDescription="@string/desc_profile_pic_dev"
+        android:elevation="8dp"
+        android:src="@drawable/dev_pic" />
 
 </FrameLayout>

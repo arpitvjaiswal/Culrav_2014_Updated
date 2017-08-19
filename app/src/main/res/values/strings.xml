@@ -22,5 +22,9 @@
 
     <!-- Misc. -->
     <string name="misc_load_with">Load With</string>
+    <string name="developer_name">Arpit Jaiswal</string>
+    <string name="developer_email">arpit.avj.jaiswal@gmail.com</string>
+
+    <string name="desc_profile_pic_dev">Developer Profile Pic</string>
 
 </resources>
