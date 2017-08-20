@@ -13,18 +13,20 @@
 
     <!-- Navigation Menu Items -->
     <string name="nav_menu_home">Home</string>
-    <string name="nav_menu_web">Website</string>
+    <string name="nav_menu_schedule">Schedule</string>
     <string name="nav_menu_map">Map</string>
     <string name="nav_menu_team">Team</string>
     <string name="nav_menu_dev">About</string>
+    <string name="nav_menu_web">Website</string>
     <string name="nav_menu_fb">Facebook</string>
     <string name="nav_section_social">Social</string>
 
     <!-- Misc. -->
     <string name="misc_load_with">Load With</string>
+
+    <!-- Developer -->
     <string name="developer_name">Arpit Jaiswal</string>
     <string name="developer_email">arpit.avj.jaiswal@gmail.com</string>
-
-    <string name="desc_profile_pic_dev">Developer Profile Pic</string>
+    <string name="developer_profile_pic">Developer Profile Pic</string>
 
 </resources>

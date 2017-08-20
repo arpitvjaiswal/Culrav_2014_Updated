@@ -89,6 +89,9 @@ public class HomeActivity extends AppCompatActivity
             case R.id.nav_home:
                 openPage(HomeFragment.class);
                 break;
+            case R.id.nav_schedule:
+                openPage(ScheduleFragment.class);
+                break;
             case R.id.nav_map:
                 openPage(MapFragment.class);
                 break;
