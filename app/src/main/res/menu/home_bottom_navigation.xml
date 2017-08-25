@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_category_explore"
+        android:enabled="true"
+        android:title="@string/home_category_explore"
+        android:icon="@drawable/ic_home_cat_explore"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/home_category_nites"
+        android:enabled="true"
+        android:title="@string/home_category_nites"
+        android:icon="@drawable/ic_home_cat_nites"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/home_category_stream"
+        android:enabled="true"
+        android:title="@string/home_category_stream"
+        android:icon="@drawable/ic_home_cat_stream"
+        app:showAsAction="always"/>
+
+</menu>

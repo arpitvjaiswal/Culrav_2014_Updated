@@ -28,5 +28,8 @@
     <string name="developer_name">Arpit Jaiswal</string>
     <string name="developer_email">arpit.avj.jaiswal@gmail.com</string>
     <string name="developer_profile_pic">Developer Profile Pic</string>
+    <string name="home_category_explore">Explore</string>
+    <string name="home_category_nites">Nites</string>
+    <string name="home_category_stream">Stream</string>
 
 </resources>
