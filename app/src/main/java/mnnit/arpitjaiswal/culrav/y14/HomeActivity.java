@@ -19,6 +19,12 @@ import android.view.MenuItem;
 
 import java.util.List;
 
+import mnnit.arpitjaiswal.culrav.y14.navigation.DevFragment;
+import mnnit.arpitjaiswal.culrav.y14.navigation.HomeFragment;
+import mnnit.arpitjaiswal.culrav.y14.navigation.MapFragment;
+import mnnit.arpitjaiswal.culrav.y14.navigation.ScheduleFragment;
+import mnnit.arpitjaiswal.culrav.y14.navigation.TeamFragment;
+
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
