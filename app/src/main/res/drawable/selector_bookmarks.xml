@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_bookmark_black_24dp" android:state_pressed="true" /> <!-- pressed -->
+    <item android:drawable="@drawable/ic_bookmark_black_24dp" android:state_focused="true" /> <!-- focused -->
+    <item android:drawable="@drawable/ic_bookmark_black_24dp" android:state_hovered="true" /> <!-- hovered -->
+    <item android:drawable="@drawable/ic_bookmark_border_black_24dp" /> <!-- default -->
+</selector>

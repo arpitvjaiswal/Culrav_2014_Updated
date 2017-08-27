@@ -15,4 +15,5 @@
     <dimen name="team_card_name_size">34sp</dimen>
     <dimen name="team_card_designation_size">18sp</dimen>
     <dimen name="team_card_text_padding">8dp</dimen>
+    <dimen name="schedule_card_left_indicator">2dp</dimen>
 </resources>

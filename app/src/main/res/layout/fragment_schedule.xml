@@ -1,13 +1,7 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/schedule_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mnnit.arpitjaiswal.culrav.y14.navigation.ScheduleFragment">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/nav_menu_schedule" />
-
-</FrameLayout>
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="vertical" />
